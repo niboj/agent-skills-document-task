@@ -1,21 +1,21 @@
 ---
 name: replace-me
-description: Use this skill when you need a high-quality text transformation workflow with local rules, reusable references, or structured validation.
+description: Utiliser cette competence lorsqu il faut un workflow de transformation de texte de haute qualite avec regles locales, references reutilisables ou validation structuree.
 ---
 
 # Skill: replace me
 
-## Goal
+## Objectif
 
 Produire une transformation textuelle fiable quand le resultat depend de conventions locales, de gabarits ou de validations supplementaires.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand la sortie doit suivre un schema fixe.
 - Quand un glossaire, une taxonomie ou un gabarit local change l execution.
 - Quand une validation explicite doit etre appliquee avant finalisation.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - Le resultat attendu
@@ -23,7 +23,7 @@ Produire une transformation textuelle fiable quand le resultat depend de convent
 
 ## Workflow
 
-Progress:
+Progression:
 - [ ] Identifier la transformation principale
 - [ ] Charger seulement les references pertinentes
 - [ ] Produire une premiere sortie
@@ -45,7 +45,7 @@ Progress:
 - Les elements inventes ou supposes sont evites ou signales.
 - Les references locales sont respectees.
 
-## Escalation cases
+## Cas d escalade
 
 - source trop incomplete;
 - contraintes contradictoires;

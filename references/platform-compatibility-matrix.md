@@ -1,19 +1,19 @@
-# Platform compatibility matrix
+# Matrice de compatibilite des plateformes
 
-This repository targets a portable core for Agent Skills, with platform-specific behavior documented explicitly.
+Ce depot vise un noyau portable pour Agent Skills, avec les comportements specifiques documentes explicitement.
 
-## Shared portable core
+## Noyau portable partage
 
-- One folder per skill
-- `SKILL.md` entrypoint
-- YAML frontmatter
-- `name` and `description`
-- Markdown body
-- Optional `references/`, `scripts/`, `assets/`, `evals/`
+- Un dossier par competence
+- Point d entree `SKILL.md`
+- Frontmatter YAML
+- Champs `name` et `description`
+- Corps en Markdown
+- `references/`, `scripts/`, `assets/`, `evals/` en option
 
-## Discovery paths
+## Chemins de decouverte
 
-### Codex / generic agent-compatible layout
+### Codex / organisation generique compatible agent
 
 - `.agents/skills/<name>/SKILL.md`
 - `~/.agents/skills/<name>/SKILL.md`
@@ -27,22 +27,22 @@ This repository targets a portable core for Agent Skills, with platform-specific
 
 - `.opencode/skills/<name>/SKILL.md`
 - `~/.config/opencode/skills/<name>/SKILL.md`
-- also reads `.claude/skills/` and `.agents/skills/` layouts
+- lit aussi les organisations `.claude/skills/` et `.agents/skills/`
 
-## Frontmatter portability
+## Portabilite du frontmatter
 
-### Portable across all targeted environments
+### Portable sur tous les environnements cibles
 
 - `name`
 - `description`
 
-### OpenCode-documented optional fields
+### Champs optionnels documentes par OpenCode
 
 - `license`
 - `compatibility`
 - `metadata`
 
-### Claude-specific optional fields
+### Champs optionnels specifiques a Claude
 
 - `disable-model-invocation`
 - `allowed-tools`
@@ -51,28 +51,28 @@ This repository targets a portable core for Agent Skills, with platform-specific
 - `context`
 - `agent`
 
-## Notable behavior differences
+## Differences de comportement notables
 
 ### Claude Code
 
-- `description` is recommended and is used for automatic loading.
-- Descriptions longer than about 250 characters are truncated in the skill listing, so front-load the key use case.
-- `name` is optional in Claude, but keep it for cross-tool portability.
+- `description` est recommandee et utilisee pour le chargement automatique.
+- Les descriptions de plus d environ 250 caracteres sont tronquees dans la liste des competences.
+- `name` est optionnel dans Claude, mais il vaut mieux le conserver pour la portabilite.
 
 ### OpenCode
 
-- Only `name`, `description`, `license`, `compatibility`, and `metadata` are recognized in frontmatter.
-- Unknown frontmatter fields are ignored.
-- `description` must stay within 1 to 1024 characters.
+- Seuls `name`, `description`, `license`, `compatibility` et `metadata` sont reconnus dans le frontmatter.
+- Les champs de frontmatter inconnus sont ignores.
+- `description` doit rester entre 1 et 1024 caracteres.
 
-### Portable repository default
+### Valeur par defaut portable du depot
 
-- Use only `name` and `description` in shipped templates.
-- Add platform-specific metadata only in consciously tool-specific variants.
+- Utiliser seulement `name` et `description` dans les gabarits fournis.
+- Ajouter des metadonnees specifiques a une plateforme uniquement dans des variantes assumees.
 
-## Guidance
+## Recommandations
 
-- Keep the default repository templates on the portable core only.
-- Put platform-specific guidance in references, not in every skill frontmatter.
-- If using Claude-specific fields, isolate the decision in a compatibility note.
-- Treat any non-portable frontmatter as opt-in, not default.
+- Garder les gabarits par defaut sur le noyau portable uniquement.
+- Mettre les indications specifiques aux plateformes dans les references, pas dans chaque frontmatter.
+- Si des champs specifiques a Claude sont utilises, isoler ce choix dans une note de compatibilite.
+- Considerer tout frontmatter non portable comme une option explicite, pas comme la valeur par defaut.

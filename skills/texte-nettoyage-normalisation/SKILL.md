@@ -1,21 +1,21 @@
 ---
 name: texte-nettoyage-normalisation
-description: Use this skill when you need to clean up raw text, normalize formatting, remove noise, and preserve the original meaning.
+description: Utiliser cette competence lorsqu il faut nettoyer un texte brut, normaliser sa mise en forme, supprimer le bruit et preserver le sens d origine.
 ---
 
 # Skill: texte-nettoyage-normalisation
 
-## Goal
+## Objectif
 
 Transformer un texte brut ou degrade en une version propre, lisible et coherente sans en changer le fond.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand le texte contient du bruit: doublons, artefacts de copier-coller, espaces erratiques, retours de ligne parasites ou ponctuation incoherente.
 - Quand il faut harmoniser la casse, la structure des paragraphes, les listes ou les titres.
 - Quand la priorite est la lisibilite et la fidelite, pas la reformulation de fond.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - Les contraintes de preservation du sens

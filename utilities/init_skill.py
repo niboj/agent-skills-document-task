@@ -22,55 +22,55 @@ description: {description}
 
 # Skill: {name}
 
-## Goal
+## Objectif
 
-Produce a reliable text transformation for one focused, repeatable use case.
+Produire une transformation de texte fiable pour un cas d usage cible et repetable.
 
-## When to use
+## Quand utiliser cette competence
 
-- Replace these bullets with the exact moment the skill should trigger.
-- Keep the scope limited to one main text transformation.
+- Remplacer ces puces par le moment exact ou la competence doit se declencher.
+- Garder un perimetre limite a une transformation textuelle principale.
 
-## Inputs
+## Entrees
 
-- Source text
-- Constraints that matter
-- Relevant local references, if any
+- Texte source
+- Contraintes pertinentes
+- References locales utiles, si necessaire
 
 ## Procedure
 
-1. Identify the source text, target output, and required constraints.
-2. Read only the references needed for the current case.
-3. Execute the default transformation path first.
-4. Validate the output before finalizing.
+1. Identifier le texte source, la sortie cible et les contraintes requises.
+2. Lire uniquement les references necessaires pour le cas traite.
+3. Executer d abord le chemin de transformation par defaut.
+4. Valider la sortie avant finalisation.
 
 ## Validation
 
-- Replace this checklist with concrete checks on the transformed text.
+- Remplacer cette checklist par des verifications concretes sur le texte transforme.
 """
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Initialize a new Agent Skill folder.")
-    parser.add_argument("--root", default="skills", help="Skills root directory")
-    parser.add_argument("--name", required=True, help="Skill folder and frontmatter name")
-    parser.add_argument("--description", required=True, help="Trigger-oriented skill description")
-    parser.add_argument("--with-references", action="store_true", help="Create references/context.md")
-    parser.add_argument("--with-scripts", action="store_true", help="Create scripts/ directory")
-    parser.add_argument("--with-assets", action="store_true", help="Create assets/ directory")
-    parser.add_argument("--with-evals", action="store_true", help="Create evals/evals.json")
+    parser = argparse.ArgumentParser(description="Initialiser un nouveau dossier de competence Agent Skills.")
+    parser.add_argument("--root", default="skills", help="Dossier racine des competences")
+    parser.add_argument("--name", required=True, help="Nom du dossier et du frontmatter")
+    parser.add_argument("--description", required=True, help="Description orientee declenchement")
+    parser.add_argument("--with-references", action="store_true", help="Creer references/context.md")
+    parser.add_argument("--with-scripts", action="store_true", help="Creer le dossier scripts/")
+    parser.add_argument("--with-assets", action="store_true", help="Creer le dossier assets/")
+    parser.add_argument("--with-evals", action="store_true", help="Creer evals/evals.json")
     args = parser.parse_args()
 
     name = slugify(args.name)
     if len(name) > MAX_NAME_LENGTH:
-        raise SystemExit(f"Skill name exceeds {MAX_NAME_LENGTH} characters after normalization: {name}")
+        raise SystemExit(f"Le nom de la competence depasse {MAX_NAME_LENGTH} caracteres apres normalisation: {name}")
     if not NAME_RE.match(name):
-        raise SystemExit(f"Invalid skill name after normalization: {name}")
+        raise SystemExit(f"Nom de competence invalide apres normalisation: {name}")
 
     root = Path(args.root)
     skill_dir = root / name
     if skill_dir.exists():
-        raise SystemExit(f"Skill directory already exists: {skill_dir}")
+        raise SystemExit(f"Le dossier de competence existe deja: {skill_dir}")
 
     skill_dir.mkdir(parents=True)
     (skill_dir / "SKILL.md").write_text(build_skill_md(name, args.description), encoding="utf-8")
@@ -81,7 +81,7 @@ def main() -> int:
         ref_dir = skill_dir / "references"
         ref_dir.mkdir()
         ref_file = ref_dir / "context.md"
-        ref_file.write_text("# Local reference\n\nAdd only material that changes execution.\n", encoding="utf-8")
+        ref_file.write_text("# Reference locale\n\nAjouter seulement le contenu qui change reellement l execution.\n", encoding="utf-8")
         created.append(str(ref_file))
 
     if args.with_scripts:

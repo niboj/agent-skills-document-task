@@ -18,7 +18,7 @@ Ces instructions s appliquent a tout le depot.
 - Ne pas ajouter de script si une procedure Markdown suffit.
 - Si une sous-arborescence contient un autre `AGENTS.MD`, cette regle locale prime.
 
-## Workflow recommande pour un nouveau skill
+## Workflow recommande pour une nouvelle competence
 
 1. Cadrer la transformation textuelle principale.
 2. Definir le declenchement exact dans la `description`.
@@ -40,5 +40,5 @@ Ces instructions s appliquent a tout le depot.
 - Verifier que les chemins cites existent.
 - Verifier que le nom du dossier correspond au champ `name`.
 - Verifier que la `description` contient une formule de declenchement explicite.
-- Verifier que les headings `## Goal`, `## When to use` et `## Procedure` sont presents.
+- Verifier que les sections `## Objectif`, `## Quand utiliser cette competence` et `## Procedure` sont presentes.
 - Verifier que la sortie attendue est observable et evaluable.

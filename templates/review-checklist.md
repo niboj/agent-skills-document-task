@@ -1,4 +1,4 @@
-# Review checklist
+# Checklist de revue
 
 - Le nom du skill est explicite et stable.
 - La `description` dit clairement quand utiliser le skill.

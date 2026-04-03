@@ -89,7 +89,7 @@ Initialisation minimale:
 ```bash
 python3 utilities/init_skill.py \
   --name texte-conversion-compte-rendu \
-  --description "Use this skill when you need a repeatable workflow to convert rough notes into a clean meeting summary."
+  --description "Utiliser cette competence lorsqu il faut convertir des notes brutes en compte rendu propre et repetable."
 ```
 
 Avec references et evaluations:
@@ -97,7 +97,7 @@ Avec references et evaluations:
 ```bash
 python3 utilities/init_skill.py \
   --name texte-fiche-decision \
-  --description "Use this skill when you need to transform unstructured discussion notes into a decision brief with explicit sections." \
+  --description "Utiliser cette competence lorsqu il faut transformer des notes de discussion non structurees en fiche de decision avec sections explicites." \
   --with-references \
   --with-evals
 ```

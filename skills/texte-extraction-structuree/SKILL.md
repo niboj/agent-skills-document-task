@@ -1,21 +1,21 @@
 ---
 name: texte-extraction-structuree
-description: Use this skill when you need to extract structured fields, lists, tables, or factual elements from unstructured text.
+description: Utiliser cette competence lorsqu il faut extraire des champs structures, des listes, des tableaux ou des elements factuels depuis un texte non structure.
 ---
 
 # Skill: texte-extraction-structuree
 
-## Goal
+## Objectif
 
 Transformer un texte libre en structure exploitable: champs, tableau Markdown, liste de faits, fiche ou sectionnement stable.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand l information est melangee dans un texte narratif ou conversationnel.
 - Quand il faut isoler des entites, attributs, decisions, dates, actions, contraintes ou questions.
 - Quand le resultat attendu doit etre reutilisable dans un autre artefact.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - Le schema de sortie attendu, s il est connu

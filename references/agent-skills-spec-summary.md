@@ -1,21 +1,21 @@
-# Agent Skills specification summary
+# Resume de la specification Agent Skills
 
-This repository follows the public Agent Skills format and authoring guidance.
+Ce depot suit le format public Agent Skills et ses principes generaux de redaction.
 
-## Baseline rules
+## Regles de base
 
-- A skill is a folder that contains at least `SKILL.md`.
-- `SKILL.md` must contain YAML frontmatter followed by Markdown instructions.
-- Required frontmatter fields: `name`, `description`.
-- `name` should use lowercase letters, digits, and hyphens only.
-- Keep `SKILL.md` lean; move detail into `references/`, `assets/`, or `scripts/` when needed.
-- Write `description` for triggering, not for documentation alone.
-- Use scripts only when determinism or repeatability matters.
-- Prefer realistic evaluations over contrived prompts.
+- Une competence est un dossier contenant au minimum `SKILL.md`.
+- `SKILL.md` doit contenir un frontmatter YAML suivi d instructions en Markdown.
+- Les champs de frontmatter requis sont `name` et `description`.
+- `name` doit utiliser uniquement des lettres minuscules, des chiffres et des traits d union.
+- Garder `SKILL.md` concis et deplacer le detail dans `references/`, `assets/` ou `scripts/` si necessaire.
+- Rediger `description` pour le declenchement, pas seulement pour la documentation.
+- Utiliser des scripts seulement si le determinisme ou la repetabilite le justifient.
+- Preferer des evaluations realistes a des prompts artificiels.
 
-## Repository policy
+## Politique du depot
 
-- Author-facing repository documentation may be in French.
-- Portable skills should be written in English unless there is a strong reason not to.
-- Optional frontmatter beyond `name` and `description` should stay minimal.
-- If `allowed-tools` is used, treat it as experimental and document that explicitly.
+- La documentation du depot peut etre redigee en francais.
+- Les competences du depot peuvent etre redigees en francais quand cela sert clairement l usage cible.
+- Les champs optionnels du frontmatter au dela de `name` et `description` doivent rester minimaux.
+- Si `allowed-tools` est utilise, le traiter comme experimental et le documenter explicitement.

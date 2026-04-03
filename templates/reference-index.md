@@ -1,4 +1,4 @@
-# Reference index
+# Index des references
 
 Utiliser ce fichier comme point d entree pour les references d un skill quand plusieurs fichiers sont necessaires.
 

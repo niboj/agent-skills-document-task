@@ -1,21 +1,21 @@
 ---
 name: traduction-anglais-francais
-description: Use this skill when you need to translate text from English to French in a faithful, natural, and professional way, with selectable translation modes.
+description: Utiliser cette competence lorsqu il faut traduire un texte de l anglais vers le francais de maniere fidele, naturelle et professionnelle, avec plusieurs modes de traduction.
 ---
 
 # Skill: traduction-anglais-francais
 
-## Goal
+## Objectif
 
 Traduire un texte de l anglais vers le francais de maniere fidele, naturelle et professionnelle.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand l utilisateur demande une traduction de l anglais vers le francais.
 - Quand le texte doit etre traduit sans changer son sens ni ajouter d explication.
 - Quand le niveau de langue ou le contexte impose un mode de traduction explicite.
 
-## Inputs
+## Entrees
 
 - Le texte source en anglais
 - Le mode de traduction demande, si precise
@@ -30,7 +30,7 @@ Traduire un texte de l anglais vers le francais de maniere fidele, naturelle et 
 5. Conserver en anglais les termes reserves, techniques ou imposes par le format.
 6. En cas d ambiguite importante, choisir la formulation la plus probable selon le contexte sans ajouter de commentaire sauf demande explicite.
 
-## General rules
+## Consignes generales
 
 - Traduire le sens du texte, sans faire de traduction mot a mot.
 - Produire un francais clair et correct.
@@ -39,7 +39,7 @@ Traduire un texte de l anglais vers le francais de maniere fidele, naturelle et 
 - Ne pas ajouter d explication sauf demande explicite.
 - En cas d ambiguite importante, choisir la formulation la plus probable selon le contexte.
 
-## Terms to keep in English
+## Termes a conserver en anglais
 
 - Ne pas traduire les termes reserves, techniques ou imposes par le format.
 - Conserver en anglais les cles techniques comme `name` et `description`.
@@ -48,9 +48,9 @@ Traduire un texte de l anglais vers le francais de maniere fidele, naturelle et 
 - Ne pas traduire les noms officiels de produits, bibliotheques, API, protocoles, standards et outils.
 - Conserver les acronymes, noms propres, URL et references techniques tels quels, sauf demande contraire explicite.
 
-## Translation modes
+## Modes de traduction
 
-### Default mode
+### Mode implicite
 
 Si l utilisateur ne precise aucun mode, utiliser le mode `naturel`.
 
@@ -90,7 +90,7 @@ Si l utilisateur ne precise aucun mode, utiliser le mode `naturel`.
 - Ne pas traduire les noms de produits, commandes, acronymes, identifiants, chemins, options, mots-cles techniques et fragments de code.
 - Preserver la structure logique du contenu.
 
-## Request interpretation
+## Interpretation des demandes
 
 - `proche du texte`, `litterale`, `au plus pres` -> mode `fidele`
 - `fluide`, `naturelle`, `idiomatique` -> mode `naturel`

@@ -1,4 +1,4 @@
-# Skills
+# Competences
 
 Ce dossier contient le catalogue principal des skills de transformation de texte.
 
@@ -11,7 +11,7 @@ Ce dossier contient le catalogue principal des skills de transformation de texte
 - des references uniquement si elles changent vraiment la maniere d executer le skill;
 - un coeur portable prioritaire pour `.agents/skills/`, `.claude/skills/` et `.opencode/skills/`.
 
-## Skills fournies
+## Competences fournies
 
 - `traduction-anglais-francais`
 - `texte-nettoyage-normalisation`

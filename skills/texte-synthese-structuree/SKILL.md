@@ -1,21 +1,21 @@
 ---
 name: texte-synthese-structuree
-description: Use this skill when you need to condense long text into a concise, structured summary with explicit key points, decisions, risks, or actions.
+description: Utiliser cette competence lorsqu il faut condenser un texte long en synthese concise et structuree avec points cles, decisions, risques ou actions explicites.
 ---
 
 # Skill: texte-synthese-structuree
 
-## Goal
+## Objectif
 
 Produire une synthese courte, structuree et exploitable a partir d un contenu plus long.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand le texte source est trop long pour etre lu tel quel.
 - Quand il faut ressortir les points essentiels, decisions, enjeux, risques ou actions.
 - Quand la valeur attendue est la condensation et la priorisation de l information.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - Le niveau de compression attendu

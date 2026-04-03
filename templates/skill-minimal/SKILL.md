@@ -1,20 +1,20 @@
 ---
 name: replace-me
-description: Use this skill when you need a focused text transformation workflow with a clear input, a repeatable procedure, and an observable output.
+description: Utiliser cette competence lorsqu il faut un workflow cible de transformation de texte avec une entree claire, une procedure repetitive et une sortie observable.
 ---
 
 # Skill: replace me
 
-## Goal
+## Objectif
 
 Transformer un type de texte donne vers une sortie cible, de facon simple et repetable.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand la demande correspond a une transformation textuelle unique et bien bornee.
 - Quand une procedure courte suffit sans references lourdes ni scripts.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - Les contraintes utiles

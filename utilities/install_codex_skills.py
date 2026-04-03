@@ -47,7 +47,7 @@ def main() -> int:
     skills_root = Path(args.skills_root)
 
     if not skills_root.exists():
-        raise SystemExit(f"Skills root does not exist: {skills_root}")
+        raise SystemExit(f"Le dossier racine des competences n existe pas: {skills_root}")
 
     target_dir.mkdir(parents=True, exist_ok=True)
 

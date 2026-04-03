@@ -1,21 +1,21 @@
 ---
 name: texte-reformulation-ciblee
-description: Use this skill when you need to rewrite text for a specific audience, tone, level of formality, or communication objective.
+description: Utiliser cette competence lorsqu il faut reformuler un texte pour un public, un ton, un niveau de formalite ou un objectif de communication precis.
 ---
 
 # Skill: texte-reformulation-ciblee
 
-## Goal
+## Objectif
 
 Adapter un texte existant a une cible editoriale explicite: public, ton, registre, longueur ou intention.
 
-## When to use
+## Quand utiliser cette competence
 
 - Quand le texte doit etre plus clair, plus institutionnel, plus direct, plus pedagogique ou plus bref.
 - Quand il faut adapter un message au lectorat: direction, equipe technique, grand public, client, partenaire.
 - Quand le besoin porte sur la maniere de dire, non sur une transformation structurelle lourde.
 
-## Inputs
+## Entrees
 
 - Le texte source
 - La cible editoriale demandee
