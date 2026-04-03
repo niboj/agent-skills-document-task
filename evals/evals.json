@@ -1,0 +1,56 @@
+{
+  "version": "1",
+  "suite": "repository-level-examples",
+  "cases": [
+    {
+      "id": "translate-technical-paragraph",
+      "target_skill": "traduction-anglais-francais",
+      "prompt": "Traduis ce paragraphe technique de l anglais vers le francais en mode technique, sans traduire les commandes, chemins et noms de produits.",
+      "expected_behavior": [
+        "Traduit vers le francais.",
+        "Respecte le mode technique.",
+        "Conserve en anglais les elements techniques imposes."
+      ]
+    },
+    {
+      "id": "cleanup-messy-notes",
+      "target_skill": "texte-nettoyage-normalisation",
+      "prompt": "Nettoie ces notes collees depuis plusieurs sources. Il y a des lignes cassees, des doublons et des puces incoherentes, mais il faut conserver tous les faits.",
+      "expected_behavior": [
+        "Supprime le bruit de forme.",
+        "Preserve le sens et les faits.",
+        "Produit un texte plus lisible."
+      ]
+    },
+    {
+      "id": "rewrite-for-executives",
+      "target_skill": "texte-reformulation-ciblee",
+      "prompt": "Reformule ce message technique pour un comite de direction, avec un ton sobre et une longueur maximale de 120 mots.",
+      "expected_behavior": [
+        "Adapte le ton au public cible.",
+        "Respecte la contrainte de longueur.",
+        "Preserve le message principal."
+      ]
+    },
+    {
+      "id": "summarize-long-article",
+      "target_skill": "texte-synthese-structuree",
+      "prompt": "Fais une synthese en 5 points de cet article, avec une section risques et une section actions suggerees.",
+      "expected_behavior": [
+        "Condense le contenu.",
+        "Structure la sortie par sections utiles.",
+        "Met en avant les risques et actions."
+      ]
+    },
+    {
+      "id": "extract-decision-table",
+      "target_skill": "texte-extraction-structuree",
+      "prompt": "A partir de cette discussion libre, extrait un tableau Markdown avec decision, responsable, date cible et points en suspens.",
+      "expected_behavior": [
+        "Produit un schema stable.",
+        "Separe les faits des inconnues.",
+        "Rend la sortie reutilisable."
+      ]
+    }
+  ]
+}

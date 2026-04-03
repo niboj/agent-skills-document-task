@@ -1,0 +1,33 @@
+{
+  "version": "1",
+  "skill": "replace-me",
+  "cases": [
+    {
+      "id": "simple-case",
+      "prompt": "Transforme ce texte desorganise en sortie propre et exploitable.",
+      "expected_behavior": [
+        "Applique la transformation principale.",
+        "Produit un resultat lisible.",
+        "N invente pas d information."
+      ]
+    },
+    {
+      "id": "ambiguous-case",
+      "prompt": "Fais la transformation demandee mais le texte source est incomplet et melange plusieurs sujets.",
+      "expected_behavior": [
+        "Separe les faits des inconnues.",
+        "Signale les ambiguïtés utiles.",
+        "Reste dans le perimetre du skill."
+      ]
+    },
+    {
+      "id": "boundary-case",
+      "prompt": "Applique la transformation a un texte long avec plusieurs contraintes de forme.",
+      "expected_behavior": [
+        "Respecte les contraintes pertinentes.",
+        "Garde une sortie exploitable.",
+        "Ne derape pas vers un autre type de skill."
+      ]
+    }
+  ]
+}
