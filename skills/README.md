@@ -1,18 +1,20 @@
 # Competences
 
-Ce dossier contient le catalogue principal des skills de transformation de texte.
+Ce dossier contient le catalogue principal des competences de transformation de texte.
 
 ## Regles communes
 
-- un dossier par skill;
+- un dossier par competence;
 - un `SKILL.md` obligatoire;
 - un nom de dossier identique au champ `name`;
 - une description orientee declenchement;
-- des references uniquement si elles changent vraiment la maniere d executer le skill;
+- des references uniquement si elles changent vraiment la maniere d executer la competence;
 - un coeur portable prioritaire pour `.agents/skills/`, `.claude/skills/` et `.opencode/skills/`.
 
 ## Competences fournies
 
+- `analyse-documentation`
+- `redaction-documentation-informationnelle`
 - `traduction-anglais-francais`
 - `texte-nettoyage-normalisation`
 - `texte-reformulation-ciblee`
@@ -21,7 +23,7 @@ Ce dossier contient le catalogue principal des skills de transformation de texte
 
 ## Ligne editoriale
 
-Chaque skill doit resoudre une transformation textuelle principale avec:
+Chaque competence doit resoudre une transformation textuelle principale avec:
 
 - une entree textuelle identifiable;
 - une procedure simple;

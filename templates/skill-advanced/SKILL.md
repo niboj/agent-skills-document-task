@@ -3,7 +3,7 @@ name: replace-me
 description: Utiliser cette competence lorsqu il faut un workflow de transformation de texte de haute qualite avec regles locales, references reutilisables ou validation structuree.
 ---
 
-# Skill: replace me
+# Competence: replace me
 
 ## Objectif
 
@@ -21,7 +21,7 @@ Produire une transformation textuelle fiable quand le resultat depend de convent
 - Le resultat attendu
 - Les references locales utiles
 
-## Workflow
+## Deroulement
 
 Progression:
 - [ ] Identifier la transformation principale

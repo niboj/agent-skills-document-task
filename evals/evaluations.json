@@ -3,6 +3,26 @@
   "suite": "repository-level-examples",
   "cases": [
     {
+      "id": "analyse-article-reference",
+      "target_skill": "analyse-documentation",
+      "prompt": "Analyse cet article de reference et produis une synthese avec idees essentielles, constats majeurs, risques, limites et elements a valider.",
+      "expected_behavior": [
+        "Produit une synthese structuree.",
+        "Separe les constats des conclusions.",
+        "Signale les risques, limites et incertitudes."
+      ]
+    },
+    {
+      "id": "rediger-article-informationnel",
+      "target_skill": "redaction-documentation-informationnelle",
+      "prompt": "Redige un article informationnel en francais pour expliquer ce qu est un portail de services, son role, son fonctionnement general et ses limites.",
+      "expected_behavior": [
+        "Produit un article clair et pedagogique.",
+        "Adopte un ton neutre et non promotionnel.",
+        "Structure le contenu en sections de reference reutilisables."
+      ]
+    },
+    {
       "id": "translate-technical-paragraph",
       "target_skill": "traduction-anglais-francais",
       "prompt": "Traduis ce paragraphe technique de l anglais vers le francais en mode technique, sans traduire les commandes, chemins et noms de produits.",

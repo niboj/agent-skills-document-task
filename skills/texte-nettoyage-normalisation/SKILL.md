@@ -3,7 +3,7 @@ name: texte-nettoyage-normalisation
 description: Utiliser cette competence lorsqu il faut nettoyer un texte brut, normaliser sa mise en forme, supprimer le bruit et preserver le sens d origine.
 ---
 
-# Skill: texte-nettoyage-normalisation
+# Competence: texte-nettoyage-normalisation
 
 ## Objectif
 

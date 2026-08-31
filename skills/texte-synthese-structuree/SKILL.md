@@ -3,7 +3,7 @@ name: texte-synthese-structuree
 description: Utiliser cette competence lorsqu il faut condenser un texte long en synthese concise et structuree avec points cles, decisions, risques ou actions explicites.
 ---
 
-# Skill: texte-synthese-structuree
+# Competence: texte-synthese-structuree
 
 ## Objectif
 

@@ -72,15 +72,15 @@ def check_skill_dir(skill_dir: Path):
             if path.is_file() and len(path.relative_to(refs_dir).parts) > 2:
                 issues.append(f"L arborescence references est trop profonde: {path}")
 
-    evals_file = skill_dir / "evals" / "evals.json"
+    evals_file = skill_dir / "evals" / "evaluations.json"
     if evals_file.exists():
         try:
             evals = json.loads(evals_file.read_text(encoding="utf-8"))
             cases = evals.get("cases", [])
             if not isinstance(cases, list) or len(cases) < 3:
-                issues.append("evals/evals.json devrait contenir au moins 3 cas")
+                issues.append("evals/evaluations.json devrait contenir au moins 3 cas")
         except json.JSONDecodeError:
-            issues.append("evals/evals.json n est pas un JSON valide")
+            issues.append("evals/evaluations.json n est pas un JSON valide")
 
     return issues
 

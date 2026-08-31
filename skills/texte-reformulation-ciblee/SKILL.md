@@ -3,7 +3,7 @@ name: texte-reformulation-ciblee
 description: Utiliser cette competence lorsqu il faut reformuler un texte pour un public, un ton, un niveau de formalite ou un objectif de communication precis.
 ---
 
-# Skill: texte-reformulation-ciblee
+# Competence: texte-reformulation-ciblee
 
 ## Objectif
 

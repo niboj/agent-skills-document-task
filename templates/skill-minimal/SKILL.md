@@ -3,7 +3,7 @@ name: replace-me
 description: Utiliser cette competence lorsqu il faut un workflow cible de transformation de texte avec une entree claire, une procedure repetitive et une sortie observable.
 ---
 
-# Skill: replace me
+# Competence: replace me
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Transformer un type de texte donne vers une sortie cible, de facon simple et rep
 ## Procedure
 
 1. Identifier le type d entree et la sortie attendue.
-2. Appliquer le chemin par defaut du skill.
+2. Appliquer le chemin par defaut de la competence.
 3. Garder explicites les contraintes de forme, ton ou structure.
 4. Verifier que la sortie est exploitable telle quelle.
 

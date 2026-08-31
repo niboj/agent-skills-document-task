@@ -8,7 +8,7 @@ from pathlib import Path
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Execute check_skill.py sur chaque dossier de competence contenant SKILL.md."
+        description="Execute verifier_competence.py sur chaque dossier de competence contenant SKILL.md."
     )
     parser.add_argument(
         "--skills-root",
@@ -29,7 +29,7 @@ def main() -> int:
     if not skill_dirs:
         raise SystemExit(f"Aucune competence trouvee sous: {skills_root}")
 
-    cmd = [sys.executable, "utilities/check_skill.py", *[str(path) for path in skill_dirs]]
+    cmd = [sys.executable, "utilities/verifier_competence.py", *[str(path) for path in skill_dirs]]
     result = subprocess.run(cmd, capture_output=True, text=True)
 
     if result.stdout:

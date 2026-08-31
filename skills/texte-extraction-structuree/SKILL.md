@@ -3,7 +3,7 @@ name: texte-extraction-structuree
 description: Utiliser cette competence lorsqu il faut extraire des champs structures, des listes, des tableaux ou des elements factuels depuis un texte non structure.
 ---
 
-# Skill: texte-extraction-structuree
+# Competence: texte-extraction-structuree
 
 ## Objectif
 

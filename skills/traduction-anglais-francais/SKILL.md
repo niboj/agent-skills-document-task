@@ -3,7 +3,7 @@ name: traduction-anglais-francais
 description: Utiliser cette competence lorsqu il faut traduire un texte de l anglais vers le francais de maniere fidele, naturelle et professionnelle, avec plusieurs modes de traduction.
 ---
 
-# Skill: traduction-anglais-francais
+# Competence: traduction-anglais-francais
 
 ## Objectif
 

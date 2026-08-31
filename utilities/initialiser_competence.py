@@ -58,7 +58,7 @@ def main() -> int:
     parser.add_argument("--with-references", action="store_true", help="Creer references/context.md")
     parser.add_argument("--with-scripts", action="store_true", help="Creer le dossier scripts/")
     parser.add_argument("--with-assets", action="store_true", help="Creer le dossier assets/")
-    parser.add_argument("--with-evals", action="store_true", help="Creer evals/evals.json")
+    parser.add_argument("--with-evals", action="store_true", help="Creer evals/evaluations.json")
     args = parser.parse_args()
 
     name = slugify(args.name)
@@ -97,7 +97,7 @@ def main() -> int:
     if args.with_evals:
         evals_dir = skill_dir / "evals"
         evals_dir.mkdir()
-        evals_file = evals_dir / "evals.json"
+        evals_file = evals_dir / "evaluations.json"
         evals_file.write_text(json.dumps({
             "version": "1",
             "skill": name,
