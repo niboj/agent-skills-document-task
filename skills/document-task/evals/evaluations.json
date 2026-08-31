@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "skill": "document-task",
+  "cases": [
+    {
+      "name": "prepare markdown",
+      "input": "document-task prepare dossier/source.md",
+      "checks": ["retour compact", "document_id present", "index persistant"]
+    },
+    {
+      "name": "resume task",
+      "input": "document-task resume TASK-001",
+      "checks": ["progression compacte", "next_section present", "state charge depuis disque"]
+    },
+    {
+      "name": "finalize output",
+      "input": "document-task finalize TASK-001",
+      "checks": ["status completed", "output existe", "validation passed"]
+    }
+  ]
+}
